@@ -15,7 +15,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     document.querySelector('#msg2').textContent = '';
 
     const location = document.querySelector('input')?.value;
-    fetch('http://localhost:3000/weather?location=' + location).then((response) => {
+    fetch('/weather?location=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 document.querySelector('#msg1').textContent = data.error;

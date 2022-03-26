@@ -7,6 +7,7 @@ const geoCode = require('../src/utils/geocodeAPI.js');
 const foreCast = require('../src/utils/weatherstackAPI.js')
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // console.log(__dirname);
 // console.log(__filename);
@@ -118,6 +119,6 @@ app.get('*', (req, res) => {
 });
 
 //Starting server on port 3000
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is Up on port:3000');
 });

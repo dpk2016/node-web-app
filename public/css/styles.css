@@ -1,0 +1,60 @@
+h1{
+    color: brown;
+    background-color: wheat;
+    text-align: center
+}
+
+header a{
+    color:rgb(10, 111, 199);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+/* h2{
+    color: darkorange;
+    background-color: darkolivegreen;
+    text-align: center
+} */
+
+.portrait{
+    border: 1px dashed black;
+    width: 250px;
+}
+
+body{
+
+    color: #333333;
+    background-color: lightgoldenrodyellow;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content{
+    flex-grow: 1;
+}
+
+footer{
+    background-color: azure;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px dashed lightslategray;
+}
+
+input{
+    border: 1px solid #333333;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: wheat;
+    padding: 8px;
+}

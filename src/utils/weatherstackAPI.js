@@ -37,7 +37,9 @@ const foreCast = (latitude, longitude, callback) => {
             callback(undefined, {
                 desciption: response.body.current.weather_descriptions[0],
                 temp: response.body.current.temperature,
-                precipitation: response.body.current.precip
+                precipitation: response.body.current.precip,
+                humidity: response.body.current.humidity,
+                feelslike: response.body.current.feelslike
             });
     });
 };

@@ -84,7 +84,7 @@ app.get('/weather', (req, res) => {
             return res.send({ error });
         }
         else {
-            foreCast(latitude, longitude, (error, { desciption, temp: temperature, precipitation } = {}) => {
+            foreCast(latitude, longitude, (error, { desciption, temp: temperature, precipitation, feelslike, humidity } = {}) => {
                 if (error) {
                     return res.send({ error });
                 }
@@ -93,7 +93,7 @@ app.get('/weather', (req, res) => {
                         latitude: latitude,
                         longitude: longitude,
                         location: address,
-                        forecast: req.query.location + ' is ' + desciption + ' throughout the day. It is currently ' + temperature + ' degrees out and there is ' + precipitation + '% chances of rain.'
+                        forecast: req.query.location + ' is ' + desciption + ' throughout the day. It is currently ' + temperature + ' degrees out and there is ' + precipitation + '% chances of rain. It feels like ' + feelslike + ' degrees and there is ' + humidity + '% humidity.'
                     });
                 }
             });

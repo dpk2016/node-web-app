@@ -48,7 +48,7 @@ app.get('/about', (req, res) => {
 app.get('/weatherapp', (req, res) => {
     res.render('weatherapp', {
         title: 'Weather Data',
-        text: 'Get Weather for your location...',
+        text: 'Get Weather Forecast for your location...',
         name: 'Deb'
     });
 });
